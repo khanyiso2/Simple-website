@@ -16,15 +16,26 @@ p {
   color: #4527a0; /* deep purple text */
   margin-bottom: 20px;
 }
-
+.container {
+  max-width: 800px; /* adjust the width to your liking */
+  margin: 0 auto;
+  text-align: center;
+}
 section {
   background-color: #fff;
   padding: 20px;
   border: 1px solid #ddd;
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
-
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px;
+}
 a {
   color: #6c5ce7; /* rich purple links */
 }
