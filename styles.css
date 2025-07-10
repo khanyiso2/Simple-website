@@ -27,7 +27,7 @@ section {
   border: 1px solid #ddd;
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
+  text-align: center;
 }
 img {
   width: 200px;
