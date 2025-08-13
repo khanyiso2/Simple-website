@@ -1,13 +1,14 @@
 body {
-   background-color: #000;
+  background-color: #000;
   color: #fff;
   background-image: radial-gradient(#333 1px, transparent 1px);
   background-size: 10px 10px;
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
-   text-align: center;
+  text-align: center;
 }
+
 .logo {
   font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 700;
@@ -17,6 +18,24 @@ body {
 }
 
 .logo:hover {
+  color: #9a8aff;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #7d5ce7;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
   color: #9a8aff;
 }
 
@@ -42,7 +61,7 @@ section:last-of-type {
 }
 
 #contact ul {
-list-style-type: none;
+  list-style-type: none;
   padding: 0;
 }
 
@@ -72,14 +91,17 @@ footer {
   body {
     font-size: 14px;
   }
-  
   .logo {
     font-size: 20px;
   }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
+
 #about img {
   width: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
 }
-
