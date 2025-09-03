@@ -1,12 +1,12 @@
 body {
   background-color: #000;
   color: #fff;
-  background-image: radial-gradient(#333 1px, transparent 1px);
-  background-size: 10px 10px;
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -39,8 +39,52 @@ nav a:hover {
   color: #9a8aff;
 }
 
-.link-icon {
-  margin-right: 8px;
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.skill {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.project img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  text-align: center;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 section {
@@ -56,35 +100,8 @@ section.visible {
   transform: translateY(0);
 }
 
-section:last-of-type {
-  border-bottom: none;
-}
-
-#contact ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#contact li {
-  margin-bottom: 10px;
-}
-
-#contact a {
-  color: #7d5ce7;
-  transition: color 0.2s ease, transform 0.2s ease;
-}
-
-#contact a:hover {
-  color: #9a8aff;
-  transform: translateX(5px);
-}
-
-footer {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid #333;
-  text-align: center;
-  color: #aaa;
+.link-icon {
+  margin-right: 8px;
 }
 
 .sticky-header {
@@ -94,27 +111,5 @@ footer {
   padding: 10px 0;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-  .logo {
-    font-size: 20px;
-  }
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    display: none;
-  }
-  nav ul.show {
-    display: flex;
-  }
-}
-#about img {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
 }
 
