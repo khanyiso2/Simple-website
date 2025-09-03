@@ -3,71 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lukhanyiso's Website</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-      }
-      section {
-        margin-bottom: 40px;
-      }
-      img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin: 20px;
-      }
-    </style>
+    <title>Lukhanyiso Jibilise's Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Lukhanyiso's Website</h1>
-    </header>
-    <main>
-      <section id="about">
-        <h2>About me</h2>
-        <img src="iintro piic.jpg" alt="Lukhanyiso's profile picture" />
-        <p>
-          Hello! I'm Lukhanyiso, an enthusiast with a passion for literature,
-          music, and programming. I find solace in the serenity of solitude and
-          am always eager to learn and grow. I'm excited to explore new
-          opportunities and challenges that foster both personal and industrial
-          growth. I'm looking forward to connecting with like-minded individuals
-          and learning from their experiences.
-        </p>
-      </section>
-      <section id="skills">
-        <h2>Skills</h2>
-        <p>
-          I'm currently learning and building my skills in JavaScript, with a
-          focus on developing my programming knowledge and expertise. I'm
-          excited to continue learning and expanding my skill set.
-        </p>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <p>
-          As I continue to learn and grow as a developer, I'm excited to build
-          and showcase my projects. Stay tuned for updates!
-        </p>
-      </section>
-      <section id="contact">
-        <h2>Get in Touch</h2>
-        <p>
-          Feel free to connect with me on LinkedIn or reach out via email. I'm
-          always excited to learn from others and explore new opportunities.
-        </p>
+    <header class="sticky-header">
+      <div class="logo">Lukhanyiso Jibilise</div>
+      <h1>Welcome to my website</h1>
+      <nav>
         <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/lukhanyiso-jibilise-15385636a"
-              >LinkedIn</a
-            >
-          </li>
-          <li><a href="mailto:lukhanyiso.jibilise@umuzi.org">Email</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </section>
-    </main>
+      </nav>
+    </header>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="iintro piic.jpg" alt="Lukhanyiso's profile picture" />
+      <p>I'm Lukhanyiso Jibilise. I'm passionate about tech and development.</p>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <i class="fab fa-html5" style="color: #e34c26"></i>
+          <p>HTML & CSS</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-js" style="color: #f7df1e"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <i class="fas fa-code" style="color: #4caf50"></i>
+          <p>Responsive Web Design</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-git-alt" style="color: #f05032"></i>
+          <p>Git & GitHub</p>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <img src="Project 1.jpeg" alt="Project 1" />
+          <h3>Personal Website</h3>
+          <p>This website showcasing my portfolio and info.</p>
+        </div>
+        <div class="project">
+          <img src="Project 2.jpg" alt="Project 2" />
+          <h3>Brain-tease App Quiz</h3>
+          <p>A quiz app made with my group.</p>
+          <a href="https://github.com/theZoid9/Brain-tease-app-quiz"
+            >View on GitHub <i class="fab fa-github link-icon"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <p>Feel free to connect with me.</p>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/lukhanyiso-jibilise-15385636a"
+            ><i class="fab fa-linkedin link-icon"></i>LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://web.facebook.com/profile.php?id=100086615288875"
+            ><i class="fab fa-facebook link-icon"></i>Facebook</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/1wMf9QRGQx-LdNGZhC7dnusJTTrFULbAXvBTMczT8svs/edit?usp=sharing"
+            ><i class="fa fa-file link-icon"></i>CV</a
+          >
+        </li>
+        <li>
+          <a href="mailto:lukhanyiso.jibilise@umuzi.org"
+            ><i class="fa fa-envelope link-icon"></i>Email</a
+          >
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <p>&copy; 2025 Lukhanyiso</p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
