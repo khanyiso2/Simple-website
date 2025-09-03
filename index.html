@@ -60,18 +60,27 @@
         <p>&copy; 2025 Lukhanyiso</p>
     </footer>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const sections = document.querySelectorAll('section');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, { threshold: 0.1 });
-            sections.forEach(section => observer.observe(section));
+document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('section');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
         });
-    </script>
+      }, { threshold: 0.1 });
+      sections.forEach(section => observer.observe(section));
+
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 768) {
+            const ul = link.parentElement.parentElement;
+            ul.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
-
