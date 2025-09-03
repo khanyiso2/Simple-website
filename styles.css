@@ -1,7 +1,7 @@
 body {
   background-color: #000;
   color: #fff;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
@@ -10,7 +10,7 @@ body {
 }
 
 .logo {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 700;
   color: #7d5ce7;
   font-size: 24px;
@@ -101,7 +101,6 @@ section.visible {
 }
 
 .link-icon {
-  margin;
   margin-right: 8px;
 }
 
@@ -113,4 +112,3 @@ section.visible {
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
