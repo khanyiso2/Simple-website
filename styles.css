@@ -50,6 +50,12 @@ nav a:hover {
   padding: 20px;
   border-radius: 10px;
 }
+.iintro-piic {
+  width: 200px; 
+  height: 250px; 
+  object-fit: cover;
+  border-radius: 50% / 40%; 
+}
 
 .project {
   background-color: #333;
