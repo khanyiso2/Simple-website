@@ -39,22 +39,23 @@ nav a:hover {
   color: #9a8aff;
 }
 
-.skills-grid {
+.skills-grid, .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+
+.skills-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.projects-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .skill {
   background-color: #333;
   padding: 20px;
   border-radius: 10px;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
 }
 
 .project {
@@ -65,7 +66,7 @@ nav a:hover {
 
 .project img {
   width: 100%;
-  height: auto; 
+  height: auto;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
@@ -76,15 +77,6 @@ footer {
   border-top: 1px solid #333;
   text-align: center;
   color: #aaa;
-}
-
-@media (max-width: 768px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 section {
@@ -111,4 +103,19 @@ section.visible {
   padding: 10px 0;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 20px 10px;
+  }
+  .skills-grid, .projects-grid {
+    gap: 10px;
+  }
 }
