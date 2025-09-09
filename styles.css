@@ -60,9 +60,9 @@ nav a:hover {
 
 .project img {
  width: 200px;
- height: 200px;
+ height: 250px;
  object-fit: cover;
- border-radius: 50%;
+ border-radius: 100%;
 }
 
 
