@@ -50,11 +50,12 @@ nav a:hover {
   padding: 20px;
   border-radius: 10px;
 }
-.intro-pic {
-  width: 200px; 
-  height: 250px; 
+
+#about img {
+  width: 200px;
+  height: 250px;
   object-fit: cover;
-  border-radius: 50% / 40%; 
+  border-radius: 50% / 40%;
 }
 
 .project {
@@ -67,7 +68,7 @@ nav a:hover {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 0%;
+  border-radius: 0;
 }
 
 footer {
